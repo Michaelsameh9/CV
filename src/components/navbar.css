@@ -1,0 +1,545 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #cfcccd !important;
+    padding: 0;
+    position: fixed;
+    transition: all .5s ease-in;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    height: 60px;
+    z-index: 999;
+}
+
+.logo {
+    width: 80px;
+    height: 50px;
+    margin-top: -2%;
+    margin-left: 15%;
+}
+
+.navbar-fixed {
+    transition: all .5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+
+
+.menu {
+    width: 100%;
+    margin-left: 50%;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 22px;
+    padding-right: 6% !important;
+    position: relative !important;
+    text-decoration: none;
+
+}
+
+.ico {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+
+.nav-link:hover {
+    color: #627254 !important;
+
+}
+
+.nav-link:hover path {
+    color: #627254 !important;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    background: #627254;
+    width: 0%;
+    height: 2px;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 40%;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+
+
+@media (min-width:280px)and (max-width:480px) {
+    * {
+        padding: 0;
+    }
+
+    .bg-body-tertiary {
+        max-width: 100%;
+        z-index: 999;
+
+    }
+
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 22px;
+        background-color: #627254;
+        border: 2px solid #627254;
+    }
+
+    .nav-link:hover {
+        color: white !important;
+    }
+
+    .nav-link:hover path {
+        color: white !important;
+    }
+
+    .nav-link:hover::before {
+        width: 0%;
+    }
+
+    .logo {
+        margin-left: 1%;
+        margin-top: -4%;
+    }
+
+    .burger-menu {
+        height: 5vh;
+        width: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .burger-bar {
+        width: 2.5em;
+        height: .3em;
+        background-color: white;
+        border-radius: .5em;
+
+    }
+
+    .menu {
+        width: 100%;
+        height: 41vh;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: -1;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .menu.hidden{
+        visibility: hidden;
+    }
+
+    .menu.hidden a.nav-link:nth-child(1) {
+        transform: translatex(500px);
+        transition: all ease-in-out 1.5s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(2) {
+        transform: translatex(500px);
+        transition: all ease-in-out 1.3s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(3) {
+        transform: translatex(500px);
+        transition: all ease-in-out 1.1s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(4) {
+        transform: translatex(500px);
+        transition: all ease-in-out .9s;
+    }
+
+
+    .visible {
+        visibility: visible;
+    }
+
+    .hidden a.nav-link {
+        transform: translateX(500px);
+        transition: all ease-in-out;
+    }
+
+    .visible a.nav-link:nth-child(1) {
+        transform: translateX(0px);
+        transition: all ease-in-out .9s;
+
+    }
+
+    .visible a.nav-link:nth-child(2) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.1s;
+
+    }
+
+    .visible a.nav-link:nth-child(3) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.3s;
+
+    }
+
+    .visible a.nav-link:nth-child(4) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.5s;
+
+    }
+
+    .burger-bar.clicked:nth-child(1) {
+        transform: rotate(55deg) translate(.65em, 1.25em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(2) {
+        transform: scale(0);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(3) {
+        transform: rotate(125deg) translate(-.1em, 1em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+    }
+
+
+}
+
+@media (min-width:481px)and (max-width:768px) {
+    .bg-body-tertiary {
+        max-width: 100%;
+    }
+
+    .logo {
+        margin-top: -3%;
+        margin-left: -1%;
+    }
+
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+
+    .nav-link {
+        width: 100%;
+        font-size: 22px;
+        background-color: #627254;
+        border: 2px solid #627254;
+    }
+
+    .nav-link:hover {
+        color: white !important;
+    }
+
+    .nav-link:hover path {
+        color: white !important;
+    }
+
+    .nav-link:hover::before {
+        width: 0%;
+    }
+
+    .burger-menu {
+        height: 5vh;
+        width: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .burger-bar {
+        width: 2.5em;
+        height: .3em;
+        background-color: white;
+        border-radius: .5em;
+
+    }
+
+    .menu {
+        width: 100%;
+        height: 41vh;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: -1;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    
+    .menu.hidden{
+        visibility: hidden;
+    }
+
+
+    .menu.hidden a.nav-link:nth-child(1) {
+        transform: translatex(600px);
+        transition: all ease-in-out 1.5s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(2) {
+        transform: translatex(600px);
+        transition: all ease-in-out 1.3s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(3) {
+        transform: translatex(600px);
+        transition: all ease-in-out 1.1s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(4) {
+        transform: translatex(600px);
+        transition: all ease-in-out .9s;
+    }
+
+
+    .visible {
+        visibility: visible;
+    }
+
+    .hidden a.nav-link {
+        transform: translateX(600px);
+        transition: all ease-in-out;
+    }
+
+    .visible a.nav-link:nth-child(1) {
+        transform: translateX(0px);
+        transition: all ease-in-out .9s;
+
+    }
+
+    .visible a.nav-link:nth-child(2) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.1s;
+
+    }
+
+    .visible a.nav-link:nth-child(3) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.3s;
+
+    }
+
+    .visible a.nav-link:nth-child(4) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.5s;
+
+    }
+
+    .burger-bar.clicked:nth-child(1) {
+        transform: rotate(55deg) translate(.65em, 1.25em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(2) {
+        transform: scale(0);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(3) {
+        transform: rotate(125deg) translate(-.1em, 1em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+    }
+}
+
+@media (min-width:769px)and (max-width:991px) {
+
+    .bg-body-tertiary {
+        max-width: 100%;
+    }
+
+    .logo {
+        margin-top: -3%;
+        margin-left: 1%;
+    }
+
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+
+    .nav-link {
+        width: 100%;
+        font-size: 22px;
+        background-color: #627254;
+        border: 2px solid #627254;
+    }
+
+    .nav-link:hover {
+        color: white !important;
+    }
+
+    .nav-link:hover path {
+        color: white !important;
+    }
+
+    .nav-link:hover::before {
+        width: 0%;
+    }
+
+    .burger-menu {
+        height: 5vh;
+        width: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .burger-bar {
+        width: 2.5em;
+        height: .3em;
+        background-color: white;
+        border-radius: .5em;
+
+    }
+
+    .menu {
+        width: 100%;
+        height: 41vh;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: -1;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    
+    .menu.hidden{
+        visibility: hidden;
+    }
+
+
+    .menu.hidden a.nav-link:nth-child(1) {
+        transform: translatex(991px);
+        transition: all ease-in-out 1.5s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(2) {
+        transform: translatex(991px);
+        transition: all ease-in-out 1.3s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(3) {
+        transform: translatex(991px);
+        transition: all ease-in-out 1.1s;
+    }
+
+    .menu.hidden a.nav-link:nth-child(4) {
+        transform: translatex(991px);
+        transition: all ease-in-out .9s;
+    }
+
+
+    .visible {
+        visibility: visible;
+    }
+
+    .hidden a.nav-link {
+        transform: translateX(991px);
+        transition: all ease-in-out;
+    }
+
+    .visible a.nav-link:nth-child(1) {
+        transform: translateX(0px);
+        transition: all ease-in-out .9s;
+
+    }
+
+    .visible a.nav-link:nth-child(2) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.1s;
+
+    }
+
+    .visible a.nav-link:nth-child(3) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.3s;
+
+    }
+
+    .visible a.nav-link:nth-child(4) {
+        transform: translateX(0px);
+        transition: all ease-in-out 1.5s;
+
+    }
+
+    .burger-bar.clicked:nth-child(1) {
+        transform: rotate(55deg) translate(.65em, 1.25em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(2) {
+        transform: scale(0);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(3) {
+        transform: rotate(125deg) translate(-.1em, 1em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+    }
+}
+
+@media (min-width:992px)and (max-width:1200px) {
+    .logo {
+        margin-left: 5%;
+    }
+
+    .nav-link {
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .menu {
+        margin-left: 20%;
+        margin-right: 0;
+    }
+    .nav-link:hover::before {
+        width: 50%;
+        margin-left: -11%;
+    }
+
+}

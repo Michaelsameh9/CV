@@ -1,0 +1,131 @@
+.contact-page {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.span-title {
+    color: #76885B;
+}
+
+input {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 20px;
+
+}
+
+textarea {
+    width: 31%;
+    height: 90px;
+    margin-left: 35%;
+    border-radius: 5px;
+    border-color: white;
+    margin-bottom: 5%;
+    font-size: 20px;
+
+}
+
+label {
+    text-align: left;
+    margin-left: 35%;
+    font-size: 20px;
+    color: #76885B;
+
+}
+
+.send {
+    color: white;
+    background-color: #627254;
+    border: 1px solid #627254;
+    box-shadow: 4px 4px 2px 2px rgb(176, 163, 163);
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    padding-left: 13%;
+    margin-bottom: 8%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.send:hover {
+    color: #627254;
+    background-color: white;
+    transform: scale(1.03);
+    box-shadow: 8px 8px 4px 4px rgb(176, 163, 163);
+    transition: all 0.3s ease-in-out;
+    border: none;
+
+}
+
+
+@media (min-width:280px)and (max-width:768px) {
+    .contact-page {
+        margin-top: 25%;
+    }
+
+    label {
+        margin-left: 15%;
+    }
+
+    input {
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    textarea {
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    .send {
+        padding-left: 0%;
+    }
+}
+
+@media (min-width:769px)and (max-width:991px) {
+    .contact-page {
+        margin-top: 15%;
+    }
+
+    label {
+        margin-left: 15%;
+    }
+
+    input {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    textarea {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .send {
+        padding-left: 0%;
+    }
+}
+
+@media (min-width:992px)and (max-width:1200px) {
+    .contact-page {
+        margin-top: 10%;
+    }
+
+    .send {
+        padding-left: 0%;
+    }
+}

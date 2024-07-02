@@ -1,0 +1,133 @@
+.ftr {
+    /* background-image: url(./images/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    margin-top: 3%;
+}
+
+.p-ftr {
+    margin-left: 28%;
+    color: white;
+    font-size: 24px;
+
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: 34%;
+}
+
+ul li {
+    width: 10%;
+    text-align: center;
+}
+
+
+ul li a {
+    text-decoration: none;
+
+}
+
+ul li a span {
+    padding-left: 8%;
+    font-size: 18px;
+}
+
+.s-nam {
+    color: #627254;
+    font-size: 26px;
+}
+
+.icon-whats {
+    color: white;
+    font-size: 26px;
+}
+
+@media (min-width:280px)and (max-width:480px) {
+    .ftr {
+        margin-top: 15%;
+        display: grid;
+    }
+
+    .p-ftr {
+        margin-left: 8%;
+        width: 100%;
+        margin-bottom: 0%;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    ul li {
+        width: 11%;
+        margin-right: 6%;
+    }
+
+}
+
+@media (min-width:481px)and (max-width:768px) {
+    .ftr {
+        margin-top: 15%;
+        display: grid;
+    }
+
+    .p-ftr {
+        margin-left: 3%;
+        color: white;
+        font-size: 24px;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    ul li {
+        width: 25%;
+    }
+}
+
+@media (min-width:769px)and (max-width:991px) {
+    .ftr {
+        margin-top: 5%;
+        height: 15vh;
+
+    }
+
+    .p-ftr {
+        margin-left: 5%;
+        color: white;
+        font-size: 24px;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    ul li {
+        width: 25%;
+    }
+}
+
+@media (min-width:992px)and (max-width:1200px) {
+    .p-ftr {
+        margin-left: 11%;
+        color: white;
+        font-size: 24px;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    ul li {
+        width: 20%;
+    }
+
+    .icon-ftr {
+        width: 30px;
+        height: 30px;
+    }
+
+}

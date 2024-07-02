@@ -1,0 +1,147 @@
+.home-page {
+    margin-top: 8%;
+    height: 68vh;
+}
+
+.home-text {
+    color: white;
+    margin-left: 22%;
+    margin-top: 8%;
+}
+
+.p-name {
+    color: #76885B;
+}
+
+.btn {
+    border: 1px solid #627254;
+    background-color: #627254;
+    color: white;
+    width: 125px;
+    margin-right: 9%;
+    margin-top: 10%;
+    height: 50px;
+}
+
+.btn:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: #627254;
+
+}
+
+.btn:hover path {
+    color: #627254;
+}
+
+.avatar {
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    margin-top: -14%;
+}
+
+
+.home-2 {
+    text-align: center;
+}
+
+@media (min-width:280px)and (max-width:480px) {
+    .home-page {
+        margin-bottom: 30%;
+        margin-top: 20%;
+    }
+
+    .home-text {
+        margin-left: 4%;
+        margin-bottom: 14%;
+    }
+
+    .btn {
+        width: 104px;
+        margin-top: 5%;
+        height: 36px;
+        z-index: 999;
+    }
+
+
+
+    .avatar {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (min-width:481px)and (max-width:768px) {
+    .home-page {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .home-text {
+        color: white;
+        margin-left: 4%;
+        margin-top: 12%;
+    }
+
+    .home-2 {
+        padding: 0;
+    }
+
+    .btn {
+        width: 103px;
+        height: 40px;
+        margin-right: 7%;
+    }
+
+    .avatar {
+        width: 300px;
+        height: 300px;
+        margin-top: -7%;
+    }
+}
+
+@media (min-width:769px)and (max-width:991px) {
+    .home-page {
+        max-width: 100%;
+    }
+
+    .home-text {
+        color: white;
+        margin-left: 4%;
+        margin-top: 25%;
+    }
+
+    .avatar {
+        width: 350px;
+        height: 400px;
+        margin-top: 3%;
+    }
+}
+
+@media (min-width:992px)and (max-width:1200px) {
+    .home-page {
+        max-width: 100%;
+        margin-top: 12%;
+    }
+
+    .home-text {
+        color: white;
+        margin-left: 14%;
+        margin-top: 15%;
+    }
+
+    .home-2 {
+        margin-left: -5%;
+        margin-top: -4%;
+    }
+
+
+    .avatar {
+        width: 500px;
+        height: 400px;
+        margin-top: 4%;
+    }
+
+
+}
